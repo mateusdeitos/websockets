@@ -1,0 +1,54 @@
+.container {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.input-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.input-container input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-right: 4px;
+}
+
+.input-container button {
+	padding: 10px;
+	color: #fff;
+	background-color: rgb(8, 110, 24);
+	border: none;
+	border-radius: 8px;
+}
+
+.messages {
+	width: 100%;
+	min-height: 100%;
+	overflow-y: scroll;
+}
+
+.message {
+	padding: 16px 8px;
+	margin: 0 8px;
+	border-radius: 8px;
+}
+
+.message+.message {
+	margin-top: 8px;
+}
+
+.messages .message.sent {
+	text-align: right;
+	background-color: rgb(23, 209, 23);
+}
+
+.messages .message.received {
+	text-align: left;
+	background-color: rgb(8, 251, 206);
+}
